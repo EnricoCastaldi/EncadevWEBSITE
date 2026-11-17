@@ -256,6 +256,51 @@ main footer{padding-inline:clamp(20px,6vw,120px)}
 }
 #home .hero-content{padding:clamp(32px,5vh,68px) 0;min-width:0}
 #home .hero-content h1{overflow-wrap:anywhere}
+#home .hero-content h1{font-size:clamp(35px,4vw,74px);text-wrap:balance}
+#home-examples{scroll-margin-top:120px}
+#home-examples .home-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.45vw,25px)}
+#home-examples .home-card{
+  --example-surface:#c7f4f7;
+  --example-ink:#101c35;
+  --example-detail:#293f51;
+  --home-accent:#275875;
+  display:grid;grid-template-columns:minmax(0,1.38fr) minmax(0,1fr);
+  min-height:clamp(235px,19vw,328px);padding:0;overflow:hidden;
+  border:1px solid #ffffff2c;border-radius:20px;background:var(--example-surface);
+  color:var(--example-ink);
+}
+#home-examples .home-card:nth-child(4n+2),
+#home-examples .home-card:nth-child(4n+3){
+  --example-surface:#201946;--example-ink:#f8f4ff;
+  --example-detail:#ded5ef;--home-accent:#d6baff;
+}
+#home-examples .home-card:nth-child(4n){
+  --example-surface:#dcd5ff;--example-ink:#20173e;
+  --example-detail:#42365e;--home-accent:#524080;
+}
+#home-examples .home-card.example-custom{
+  --example-surface:#d0f8e7;--example-ink:#112b2b;
+  --example-detail:#264745;--home-accent:#205d50;
+}
+.example-content{position:relative;z-index:1;align-self:center;padding:clamp(19px,2.35vw,38px)}
+#home-examples h3{font-size:clamp(20px,2vw,32px);letter-spacing:-.035em;overflow-wrap:break-word}
+#home-examples p{color:var(--example-detail)}
+#home-examples .home-icon{width:36px;height:36px;border-radius:9px;background:color-mix(in srgb,var(--home-accent) 13%,transparent)}
+#home-examples .home-icon svg{width:20px;height:20px}
+.example-photo{
+  display:block;width:100%;height:100%;min-height:0;object-fit:cover;contain:size;
+  mask-image:linear-gradient(90deg,transparent,#000 32%);
+}
+.example-action{
+  display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:9px 13px;
+  border-radius:999px;background:#152f32;color:#fff;font-size:12px;font-weight:700;
+}
+.example-action:hover{background:#275350}
+@media(max-width:950px){#home-examples .home-card-grid{grid-template-columns:1fr}}
+@media(max-width:440px){
+  #home-examples .home-card{grid-template-columns:1fr;min-height:0}
+  .example-photo{height:auto;aspect-ratio:2.35/1;contain:none;mask-image:linear-gradient(180deg,transparent,#000 36%)}
+}
 #home .visual{padding:0}
 #home .stack{padding-inline:var(--home-gutter)}
 .home-content{padding:0;gap:0;background:none}

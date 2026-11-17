@@ -131,6 +131,14 @@ function renderPage() {
   syncMotion();
 }
 
+function focusExamples() {
+  if (location.hash !== "#home-examples") return false;
+  const heading = document.querySelector("#home-examples-title");
+  heading.focus({ preventScroll: true });
+  heading.closest("section").scrollIntoView({ block: "start" });
+  return true;
+}
+
 document.querySelector("#scroll-cue").addEventListener("click", () => {
   document.querySelector("#stack-items").focus({ preventScroll: true });
   document.querySelector("#technology-stack").scrollIntoView({
@@ -150,6 +158,7 @@ reducedMotion.addEventListener("change", (event) => {
 document.addEventListener("visibilitychange", syncMotion);
 window.addEventListener("hashchange", () => {
   renderPage();
+  if (focusExamples()) return;
   window.scrollTo(0, 0);
   const heading = pages.get(activePage).querySelector("h1");
   heading.tabIndex = -1;
@@ -158,6 +167,7 @@ window.addEventListener("hashchange", () => {
 if (context) new ResizeObserver(resize).observe(canvas);
 document.querySelector("#year").textContent = new Date().getFullYear();
 renderPage();
+focusExamples();
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver((entries) => {
