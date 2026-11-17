@@ -169,6 +169,31 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 renderPage();
 focusExamples();
 
+const examples = document.querySelector("#home-examples");
+const exampleNodes = [...examples.querySelectorAll(".example-node")];
+const examplePreviews = examples.querySelector(".example-previews");
+
+function selectExample(activeNode) {
+  for (const node of exampleNodes) {
+    const selected = node === activeNode;
+    node.setAttribute("aria-pressed", String(selected));
+    document.getElementById(node.getAttribute("aria-controls")).hidden = !selected;
+  }
+}
+
+for (const node of exampleNodes) {
+  node.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse") selectExample(node);
+  });
+  node.addEventListener("focus", () => selectExample(node));
+  node.addEventListener("click", (event) => {
+    selectExample(node);
+    if (event.pointerType === "touch" && examplePreviews.getBoundingClientRect().top > window.innerHeight - 120) {
+      examplePreviews.scrollIntoView({ block: "start", behavior: paused ? "instant" : "smooth" });
+    }
+  });
+}
+
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver((entries) => {
     for (const entry of entries) {

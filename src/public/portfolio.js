@@ -109,6 +109,7 @@ const polish = {
   "We build software": "Tworzymy aplikacje,",
   "that simplifies everyday business work.": "które ułatwiają codzienną pracę firm.",
   "See examples": "Zobacz przykłady",
+  "Explore an icon to see what we can build.": "Wybierz ikonę, aby zobaczyć, co możemy stworzyć.",
   "What we can build for you": "Co możemy dla Ciebie zbudować",
   "Custom application built for you": "Aplikacja na zamówienie",
   "Tell us what your team needs to do. We’ll design and build an application around your workflow, from the screens your team uses to the systems it connects to.": "Opowiedz nam, czego potrzebuje Twój zespół. Zaprojektujemy i stworzymy aplikację dopasowaną do jego pracy, od ekranów używanych na co dzień po połączenia z innymi systemami.",

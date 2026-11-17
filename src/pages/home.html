@@ -21,8 +21,51 @@
       <div class="home-content">
         <section class="home-section" id="home-examples" aria-labelledby="home-examples-title">
           <h2 id="home-examples-title" tabindex="-1" data-copy>What we can build for you</h2>
-          <div class="home-card-grid">
-            <article class="home-card" data-reveal>
+          <p class="example-instruction" data-copy>Explore an icon to see what we can build.</p>
+          <div class="examples-diagram">
+            <button class="example-node" type="button" aria-controls="example-property" aria-pressed="true">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3zM9 20v-6h6v6"/></svg></span>
+              <span class="example-node-label" data-copy>Property listing portal</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-tickets" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11a7 7 0 0 1-7 7H8l-5 3 1.5-5A7 7 0 0 1 10 4h4a7 7 0 0 1 7 7ZM8 11h8m-8 3h5"/></svg></span>
+              <span class="example-node-label" data-copy>Customer support tickets</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-chatbot" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 7V3m-4 9h.01m8 0h.01m-7 4h6M2 11v4m20-4v4"/></svg></span>
+              <span class="example-node-label" data-copy>Customer support chatbots</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-shipping" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h12v12H3zM15 9h4l3 4v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span>
+              <span class="example-node-label" data-copy>Shipment tracking</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-booking" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></svg></span>
+              <span class="example-node-label" data-copy>Online bookings</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-inventory" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 7 9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4m-9 4v10M7.5 5l9 4"/></svg></span>
+              <span class="example-node-label" data-copy>Inventory and stock alerts</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-purchases" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 3h6v4H9zm0 10 2 2 4-4"/></svg></span>
+              <span class="example-node-label" data-copy>Purchase requests and approvals</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-sales" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-4m4 4V9m4 7V6m4 10v-5"/></svg></span>
+              <span class="example-node-label" data-copy>Sales dashboards</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-accounting" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h15m-4-4 4 4-4 4m5 6H5m4-4-4 4 4 4"/></svg></span>
+              <span class="example-node-label" data-copy>Store and accounting integrations</span>
+            </button>
+            <button class="example-node" type="button" aria-controls="example-custom" aria-pressed="false">
+              <span class="flow-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/></svg></span>
+              <span class="example-node-label" data-copy>Custom application built for you</span>
+            </button>
+          </div>
+          <div class="example-previews">
+            <article class="home-card" id="example-property">
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3zM9 20v-6h6v6"/></svg></span>
                 <h3 data-copy>Property listing portal</h3>
@@ -31,7 +74,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/36676879/ -->
               <img class="example-photo" src="examples/property-listings.webp" width="720" height="540" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-tickets" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11a7 7 0 0 1-7 7H8l-5 3 1.5-5A7 7 0 0 1 10 4h4a7 7 0 0 1 7 7ZM8 11h8m-8 3h5"/></svg></span>
                 <h3 data-copy>Customer support tickets</h3>
@@ -40,7 +83,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/7681842/ -->
               <img class="example-photo" src="examples/support-tickets.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-chatbot" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 7V3m-4 9h.01m8 0h.01m-7 4h6M2 11v4m20-4v4"/></svg></span>
                 <h3 data-copy>Customer support chatbots</h3>
@@ -49,7 +92,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/30530405/ -->
               <img class="example-photo" src="examples/support-chatbot.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-shipping" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h12v12H3zM15 9h4l3 4v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span>
                 <h3 data-copy>Shipment tracking</h3>
@@ -58,7 +101,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/4440801/ -->
               <img class="example-photo" src="examples/shipment-tracking.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-booking" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></svg></span>
                 <h3 data-copy>Online bookings</h3>
@@ -67,7 +110,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/17668838/ -->
               <img class="example-photo" src="examples/online-booking.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-inventory" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 7 9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4m-9 4v10M7.5 5l9 4"/></svg></span>
                 <h3 data-copy>Inventory and stock alerts</h3>
@@ -76,7 +119,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/5156696/ -->
               <img class="example-photo" src="examples/inventory.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-purchases" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 3h6v4H9zm0 10 2 2 4-4"/></svg></span>
                 <h3 data-copy>Purchase requests and approvals</h3>
@@ -85,7 +128,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/8152746/ -->
               <img class="example-photo" src="examples/purchase-approval.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-sales" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-4m4 4V9m4 7V6m4 10v-5"/></svg></span>
                 <h3 data-copy>Sales dashboards</h3>
@@ -94,7 +137,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/9304917/ -->
               <img class="example-photo" src="examples/sales-dashboard.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card" data-reveal>
+            <article class="home-card" id="example-accounting" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h15m-4-4 4 4-4 4m5 6H5m4-4-4 4 4 4"/></svg></span>
                 <h3 data-copy>Store and accounting integrations</h3>
@@ -103,7 +146,7 @@
               <!-- Stock photo · https://www.pexels.com/photo/8297220/ -->
               <img class="example-photo" src="examples/store-accounting.webp" width="720" height="405" loading="lazy" decoding="async" alt="">
             </article>
-            <article class="home-card example-custom" data-reveal>
+            <article class="home-card example-custom" id="example-custom" hidden>
               <div class="example-content">
                 <span class="home-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/></svg></span>
                 <h3 data-copy>Custom application built for you</h3>
