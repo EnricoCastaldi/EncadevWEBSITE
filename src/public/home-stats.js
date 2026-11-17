@@ -2,8 +2,8 @@ const statsSection = document.querySelector("#home-stats");
 const homeTotals = {
   clients: 50,
   projects: 100,
-  development: document.querySelectorAll("#solutions .cards > article").length,
-  advisory: statsSection.querySelectorAll(".home-advisory > article").length
+  development: document.querySelectorAll("#solutions .cards > article").length+8,
+  advisory: statsSection.querySelectorAll(".home-advisory > article").length+21
 };
 const minimumTotals = new Set(["clients", "projects"]);
 

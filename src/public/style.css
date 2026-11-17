@@ -271,7 +271,7 @@ main footer{padding-inline:clamp(20px,6vw,120px)}
 }
 .example-node{
   position:relative;min-width:0;display:grid;justify-items:center;align-content:start;gap:9px;
-  padding:14px 8px;background:transparent;border:1px solid transparent;border-radius:13px;
+  padding:15px 9px;background:transparent;border:0;
   color:#e2d6f1;font:600 clamp(11px,1.2vw,15px)/1.35 var(--mono);
   cursor:var(--site-pointer,pointer);
 }
@@ -282,8 +282,9 @@ main footer{padding-inline:clamp(20px,6vw,120px)}
 .example-node:nth-child(5n)::after{display:none}
 .example-node .flow-node-icon svg{width:38px;height:38px}
 .example-node:nth-child(odd) .flow-node-icon{color:#8be2ff}
-.example-node[aria-pressed="true"]{border-color:#a287d4;background:#aa80f01f;color:#fff}
-.example-node:focus-visible{outline:2px solid #aeeaff;outline-offset:2px}
+.example-node[aria-pressed="true"]{color:#fff}
+.example-node:focus-visible{outline:0}
+.example-node:focus-visible .flow-node-icon{outline:2px solid #aeeaff;outline-offset:5px;border-radius:4px}
 .example-node-label{overflow-wrap:anywhere}
 .example-previews{margin:20px calc(-1 * var(--home-gutter)) 0;scroll-margin-top:120px}
 #home-examples .home-card{
@@ -641,16 +642,17 @@ main footer{padding-inline:clamp(20px,6vw,120px)}
   a[href],label[for],input[type="checkbox"],select{cursor:var(--site-pointer)}
   input:not([type="checkbox"]),textarea{cursor:text}
 }
-.brand img{transition:transform .28s cubic-bezier(.2,.8,.3,1.3),filter .28s ease}
-.brand:is(:hover,:focus-visible) img{
+:is(.brand img,.example-node .flow-node-icon){transition:transform .28s cubic-bezier(.2,.8,.3,1.3),filter .28s ease}
+.brand:is(:hover,:focus-visible) img,
+.example-node:is(:hover,:focus-visible,[aria-pressed="true"]) .flow-node-icon{
   transform:translateY(-2px) scale(1.045);
   filter:brightness(1.14) drop-shadow(0 0 7px #56cfff65) drop-shadow(0 0 11px #dd56e74d);
 }
-.motion-paused .brand img{transition:none}
-.motion-paused .brand:is(:hover,:focus-visible) img{transform:none}
+.motion-paused :is(.brand img,.example-node .flow-node-icon){transition:none;transform:none}
 @media(prefers-reduced-motion:reduce){
-  .brand img{transition:none}
-  .brand:is(:hover,:focus-visible) img{transform:none}
+  :is(.brand img,.example-node .flow-node-icon){transition:none}
+  .brand:is(:hover,:focus-visible) img,
+  .example-node:is(:hover,:focus-visible,[aria-pressed="true"]) .flow-node-icon{transform:none}
 }
 
 .languages button,.languages button[aria-pressed=true]{border-color:transparent;background:transparent}
