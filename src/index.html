@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101115">
+<meta name="description" content="EnCaDev builds custom web applications, SaaS platforms, and API integrations for businesses.">
+<title>EnCaDev — Digital solutions for business</title>
+<link rel="icon" href="encadev-icon.png">
+<link rel="stylesheet" href="style.css">
+<script src="portfolio.js" defer></script>
+<script src="app.js" defer></script>
+<script src="home-stats.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#home" aria-label="EnCaDev home"><img src="encadev-brand.webp" alt="" width="940" height="210"></a>
+    <nav aria-label="Main navigation">
+      <a href="#home" aria-current="page">
+        <span data-copy>Home</span>
+      </a>
+      <a href="#solutions">
+        <span data-copy>Solutions</span>
+      </a>
+      <a href="#contact">
+        <span data-copy>Contact</span>
+      </a>
+    </nav>
+    <div class="languages" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-label="English" aria-pressed="true"><img src="logos/gb.svg" alt=""> EN</button>
+      <button type="button" data-lang="pl" aria-label="Polski" aria-pressed="false"><img src="logos/pl.svg" alt=""> PL</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="window" aria-label="EnCaDev website">
+    <div class="titlebar">
+      <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="window-label">EnCaDev <span>/</span> <b id="view-label">Home</b></div>
+      <button id="motion" class="motion" type="button" aria-pressed="false" hidden><span id="motion-icon" aria-hidden="true">||</span> <span id="motion-text">Pause motion</span></button>
+    </div>
+    <canvas id="flow" aria-hidden="true"></canvas>
+    <div class="grid-overlay" aria-hidden="true"></div>
+<!-- SITE_PAGES -->
+  </section>
+  <footer><span>© <span id="year">2026</span> EnCaDev</span><a href="mailto:encadev.info@gmail.com">encadev.info@gmail.com <span aria-hidden="true">→</span></a><div class="footer-privacy"><a href="polityka-prywatnosci.pdf" data-copy>Privacy policy</a><button id="cookie-settings" type="button" data-copy>Cookie settings</button></div></footer>
+</main>
+<aside id="cookie-notice" class="cookie-notice" aria-labelledby="cookie-title" hidden>
+  <h2 id="cookie-title" data-copy>Cookies and browser storage</h2>
+  <p data-copy>EnCaDev uses browser storage for this choice and, optionally, your language. The site does not run analytics or advertising trackers. The hosting platform may use essential cookies for access.</p>
+  <div class="cookie-actions">
+    <button type="button" class="secondary" data-cookie-choice="essential" data-copy>Essential only</button>
+    <button type="button" class="primary" data-cookie-choice="language" data-copy>Remember my language</button>
+    <a href="polityka-prywatnosci.pdf" data-copy>Privacy policy</a>
+  </div>
+</aside>
+</body>
+</html>

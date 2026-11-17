@@ -1,0 +1,203 @@
+    <section class="view page" id="solutions">
+      <span class="eyebrow"><i></i> <span data-copy>SOLUTIONS</span></span>
+      <h1><span data-copy>Software that fits</span><br><em><span data-copy>how you work.</span></em></h1>
+      <p class="intro" data-copy>Build a new product, improve an internal workflow, or connect the systems your team already uses.</p>
+      <section class="solutions-terminal" aria-labelledby="services-window-title">
+        <div class="titlebar terminal-titlebar">
+          <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h2 class="window-label" id="services-window-title" data-copy>Development services</h2>
+        </div>
+        <div class="cards">
+          <article data-reveal><span class="service-icon" aria-hidden="true">▣</span><h3 data-copy>Web applications</h3><p data-copy>Build dashboards, customer portals, and internal tools around your team’s daily workflows.</p><small>React.js · Node.js</small></article>
+          <article data-reveal><span class="service-icon" aria-hidden="true">◇</span><h3 data-copy>SaaS platforms</h3><p data-copy>Turn a business process into a web product with user accounts, permissions, and a dashboard.</p><small>React.js · Node.js · PostgreSQL</small></article>
+          <article data-reveal><span class="service-icon" aria-hidden="true">⇄</span><h3 data-copy>API integrations</h3><p data-copy>Connect business systems and external services to keep records in sync and reduce manual entry.</p><small>REST APIs · Node.js · Python</small></article>
+          <article data-reveal><span class="service-icon" aria-hidden="true">▤</span><h3 data-copy>Data &amp; automation</h3><p data-copy>Organize business data, automate recurring tasks, and make reporting easier.</p><small>Python · MongoDB · SQL · PostgreSQL</small></article>
+        </div>
+      </section>
+      <section class="showcase" aria-labelledby="demo-title">
+        <div class="showcase-heading" data-reveal>
+          <h2 id="demo-title" data-copy>Interactive projects</h2>
+          <p data-copy>Choose a mockup to open its interactive demo. Each demo uses sample data.</p>
+        </div>
+
+        <div class="demo-gallery">
+          <button class="demo-preview" data-reveal type="button" data-preview="analytics" aria-controls="demo-analytics">
+            <img src="previews/analytics.webp" width="960" height="640" loading="lazy" decoding="async" alt="">
+            <span class="preview-title"><span data-copy>Sales dashboard</span><span aria-hidden="true">→</span></span>
+          </button>
+          <button class="demo-preview" data-reveal type="button" data-preview="saas" aria-controls="demo-saas">
+            <img src="previews/saas.webp" width="960" height="640" loading="lazy" decoding="async" alt="">
+            <span class="preview-title"><span data-copy>Service desk</span><span aria-hidden="true">→</span></span>
+          </button>
+          <button class="demo-preview" data-reveal type="button" data-preview="chat" aria-controls="demo-chat">
+            <img src="previews/chat.webp" width="960" height="640" loading="lazy" decoding="async" alt="">
+            <span class="preview-title"><span data-copy>Support assistant</span><span aria-hidden="true">→</span></span>
+          </button>
+        </div>
+        <div class="demo-window solutions-terminal" id="interactive-demo" role="region" aria-labelledby="demo-window-title">
+          <div class="titlebar terminal-titlebar">
+            <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3 class="window-label" id="demo-window-title" data-copy>Interactive demo</h3>
+          </div>
+          <div class="switcher" role="group" aria-label="Project demos">
+            <button type="button" data-demo="analytics" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16M8 15l4-5 4 2 4-6"/><path d="M17 6h3v3"/></svg><span data-copy>Analytics</span></button>
+            <button type="button" data-demo="saas" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9 9v11"/></svg><span data-copy>SaaS panel</span></button>
+            <button type="button" data-demo="chat" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a7 7 0 0 1-7 7H8l-5 3 1.5-5A7 7 0 0 1 10 4h3a7 7 0 0 1 7 7Z"/><path d="M8 11h.01m4 0h.01m4 0h.01"/></svg><span data-copy>Chatbot</span></button>
+          </div>
+          <div class="demo-panel" id="demo-analytics">
+            <div class="screen-navigation" role="group" aria-label="Demo screens">
+              <button type="button" data-screen aria-controls="analytics-screen-1" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span data-copy>Overview</span></button>
+              <button type="button" data-screen aria-controls="analytics-screen-2" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v9h9M20.5 15a9 9 0 1 1-11.5-11.5M15 3.6A9 9 0 0 1 20.4 9"/></svg><span data-copy>Channels</span></button>
+              <button type="button" data-screen aria-controls="analytics-screen-3" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8m-8 4h8m-8 4h5"/></svg><span data-copy>Weekly report</span></button>
+            </div>
+            <div class="demo-screen" id="analytics-screen-1">
+            <div class="demo-heading">
+              <div><h3 data-copy>Sales dashboard</h3><p data-copy>Inspect weekly orders or revenue.</p></div>
+              <label><span data-copy>Metric</span><select id="metric"><option value="orders" data-copy>Orders</option><option value="revenue" data-copy>Revenue</option></select></label>
+            </div>
+            <div class="demo-metrics">
+              <div class="demo-metric"><span class="demo-metric-icon" aria-hidden="true">∑</span><div><span data-copy>6-week total</span><strong id="chart-total"></strong></div></div>
+              <div class="demo-metric"><span class="demo-metric-icon" aria-hidden="true">≈</span><div><span data-copy>Weekly average</span><strong id="chart-average"></strong></div></div>
+              <div class="demo-metric"><span class="demo-metric-icon" aria-hidden="true">↗</span><div><span data-copy>Peak week</span><strong id="chart-peak"></strong></div></div>
+            </div>
+            <figure class="demo-plot">
+              <div id="chart" class="chart">
+                <svg class="chart-trend" viewBox="0 0 600 100" preserveAspectRatio="none" aria-hidden="true"><polyline></polyline></svg>
+              </div>
+              <figcaption id="chart-detail" class="chart-detail" aria-live="polite"></figcaption>
+            </figure>
+            </div>
+            <div class="demo-screen" id="analytics-screen-2" hidden>
+          <div class="demo-heading"><div><h3 data-copy>Orders by channel</h3><p data-copy>Compare where purchases came from.</p></div></div>
+          <div class="demo-channel-layout">
+            <div class="demo-donut" aria-hidden="true"><span><strong id="channel-total"></strong><small data-copy>Orders</small></span></div>
+            <ul class="channel-list">
+            <li><div><span data-copy>Online store</span><strong>412</strong></div><progress value="412" max="716" aria-label="Online store"></progress></li>
+            <li><div><span data-copy>Partner portal</span><strong>196</strong></div><progress value="196" max="716" aria-label="Partner portal"></progress></li>
+            <li><div><span data-copy>Direct sales</span><strong>108</strong></div><progress value="108" max="716" aria-label="Direct sales"></progress></li>
+            </ul>
+          </div>
+            </div>
+            <div class="demo-screen" id="analytics-screen-3" hidden>
+          <div class="demo-heading"><div><h3 data-copy>Weekly sales report</h3><p data-copy>Review the figures behind the dashboard.</p></div></div>
+          <div class="ticket-table"><table><thead><tr><th scope="col" data-copy>Week</th><th scope="col" data-copy>Orders</th><th scope="col" data-copy>Revenue</th></tr></thead><tbody id="weekly-report"></tbody></table></div>
+            </div>
+          </div>
+          <div class="demo-panel" id="demo-saas" hidden>
+            <div class="screen-navigation" role="group" aria-label="Demo screens">
+              <button type="button" data-screen aria-controls="saas-screen-1" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4zM15 8v2m0 4v2"/></svg><span data-copy>Tickets</span></button>
+              <button type="button" data-screen aria-controls="saas-screen-2" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 4a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v2"/></svg><span data-copy>Teams</span></button>
+              <button type="button" data-screen aria-controls="saas-screen-3" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v5c0 4 3.5 7.5 8 10 4.5-2.5 8-6 8-10V6zM8.5 12l2.2 2.2 4.8-4.8"/></svg><span data-copy>Permissions</span></button>
+            </div>
+            <div class="demo-screen" id="saas-screen-1">
+            <div class="demo-heading">
+              <div><h3 data-copy>Service desk</h3><p data-copy>Filter tickets and inspect assignments.</p></div>
+              <label><span data-copy>Status</span><select id="ticket-status"><option value="all" data-copy>All tickets</option><option value="open" data-copy>Open</option><option value="progress" data-copy>In progress</option><option value="closed" data-copy>Closed</option></select></label>
+            </div>
+            <div class="demo-metrics ticket-metrics">
+              <button type="button" class="demo-metric" data-ticket-status="open" aria-pressed="false"><span class="demo-metric-icon" aria-hidden="true">●</span><span><span data-copy>Open</span><strong></strong></span></button>
+              <button type="button" class="demo-metric" data-ticket-status="progress" aria-pressed="false"><span class="demo-metric-icon" aria-hidden="true">◒</span><span><span data-copy>In progress</span><strong></strong></span></button>
+              <button type="button" class="demo-metric" data-ticket-status="closed" aria-pressed="false"><span class="demo-metric-icon" aria-hidden="true">✓</span><span><span data-copy>Closed</span><strong></strong></span></button>
+            </div>
+            <div class="ticket-table"><table aria-label="Example service desk tickets"><thead><tr><th scope="col" data-copy>Ticket</th><th scope="col" data-copy>Team</th><th scope="col" data-copy>Status</th></tr></thead><tbody id="tickets"></tbody></table></div>
+            </div>
+            <div class="demo-screen" id="saas-screen-2" hidden>
+          <div class="demo-heading"><div><h3 data-copy>Team workload</h3><p data-copy>See which teams have outstanding tickets.</p></div></div>
+          <div class="ticket-table"><table><thead><tr><th scope="col" data-copy>Team</th><th scope="col" data-copy>Open</th><th scope="col" data-copy>In progress</th><th scope="col" data-copy>Closed</th></tr></thead><tbody id="team-workload"></tbody></table></div>
+            </div>
+            <div class="demo-screen" id="saas-screen-3" hidden>
+          <div class="demo-heading">
+            <div><h3 data-copy>Role permissions</h3><p data-copy>Preview what each role can do in this demo.</p></div>
+            <label><span data-copy>Role</span><select id="demo-role"><option value="viewer" data-copy>Viewer</option><option value="agent" data-copy>Agent</option><option value="admin" data-copy>Administrator</option></select></label>
+          </div>
+          <ul class="permission-list" id="demo-permissions" aria-live="polite"></ul>
+            </div>
+          </div>
+          <div class="demo-panel" id="demo-chat" hidden>
+            <div class="screen-navigation" role="group" aria-label="Demo screens">
+              <button type="button" data-screen aria-controls="chat-screen-1" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11a7 7 0 0 1-7 7H8l-5 3 1.5-5A7 7 0 0 1 10 4h4a7 7 0 0 1 7 7Z"/><path d="M8 11h8m-8 3h5"/></svg><span data-copy>Conversation</span></button>
+              <button type="button" data-screen aria-controls="chat-screen-2" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v14"/></svg><span data-copy>Help center</span></button>
+              <button type="button" data-screen aria-controls="chat-screen-3" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></svg><span data-copy>Handoff</span></button>
+            </div>
+            <div class="demo-screen" id="chat-screen-1">
+            <div class="demo-heading"><div><h3 data-copy>Support assistant</h3><p data-copy>Choose a question to see a sample reply.</p></div></div>
+            <div class="demo-conversation">
+              <div class="chat-log" id="chat-log" role="log" aria-label="Example conversation"></div>
+            <div class="chat-prompts" role="group" aria-label="Example questions">
+              <button type="button" data-prompt="delivery" data-copy>Track a delivery</button>
+              <button type="button" data-prompt="account" data-copy>Reset my password</button>
+              <button type="button" data-prompt="human" data-copy>Contact support</button>
+            </div>
+            </div>
+            </div>
+            <div class="demo-screen" id="chat-screen-2" hidden>
+          <div class="demo-heading"><div><h3 data-copy>Help center</h3><p data-copy>Browse the sample articles the assistant draws from.</p></div></div>
+          <div class="knowledge-list">
+            <details><summary data-copy>Track a delivery</summary><p data-copy>Open Orders and select Track delivery. You’ll see the carrier and the latest status.</p></details>
+            <details><summary data-copy>Reset my password</summary><p data-copy>Use Forgot password on the sign-in page. We’ll send a time-limited reset link to your account email.</p></details>
+            <details><summary data-copy>Contact support</summary><p data-copy>Open Support and select New ticket. Include a short description so the team can route your request.</p></details>
+          </div>
+            </div>
+            <div class="demo-screen" id="chat-screen-3" hidden>
+          <div class="demo-heading"><div><h3 data-copy>Handoff to a support team</h3><p data-copy>Choose a topic to preview how a conversation is routed.</p></div></div>
+          <div class="handoff">
+            <label><span data-copy>Topic</span><select id="handoff-topic"><option value="delivery" data-copy>Delivery</option><option value="account" data-copy>Account access</option><option value="billing" data-copy>Billing</option></select></label>
+            <button class="primary" id="handoff-preview" type="button" data-copy>Preview handoff</button>
+          </div>
+          <div id="handoff-result" class="handoff-result" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="security" aria-labelledby="security-title">
+        <div class="security-overview" data-reveal>
+          <div class="security-emblem" aria-hidden="true"><span class="shield"></span></div>
+          <h2 id="security-title" data-copy>Application security</h2>
+          <p data-copy>We design security around the data your application handles and who needs access to it.</p>
+          <a class="secondary" href="#contact"><span data-copy>Discuss security requirements</span><span aria-hidden="true">→</span></a>
+        </div>
+        <div class="security-grid">
+          <article class="security-card" data-reveal>
+            <div class="security-card-title">
+              <span class="security-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="7" r="3"/><path d="M4 20v-2a6 6 0 0 1 9-5m1 5 2 2 4-5"/></svg></span>
+              <h3 data-copy>Identity and access</h3>
+            </div>
+            <ul>
+              <li data-copy>Role-based access and MFA</li>
+              <li data-copy>Server-side permission checks</li>
+            </ul>
+          </article>
+          <article class="security-card" data-reveal>
+            <div class="security-card-title">
+              <span class="security-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg></span>
+              <h3 data-copy>Data protection</h3>
+            </div>
+            <ul>
+              <li data-copy>TLS and managed secrets</li>
+              <li data-copy>Encryption at rest where required</li>
+            </ul>
+          </article>
+          <article class="security-card" data-reveal>
+            <div class="security-card-title">
+              <span class="security-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/></svg></span>
+              <h3 data-copy>API protection</h3>
+            </div>
+            <ul>
+              <li data-copy>Input validation and scoped credentials</li>
+              <li data-copy>Rate limits on sensitive endpoints</li>
+            </ul>
+          </article>
+          <article class="security-card" data-reveal>
+            <div class="security-card-title">
+              <span class="security-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 1 1 2.3 5.7M4 8v5h5m3-5v5l3 2"/></svg></span>
+              <h3 data-copy>Monitoring and recovery</h3>
+            </div>
+            <ul>
+              <li data-copy>Audit logs and dependency updates</li>
+              <li data-copy>Backup and recovery plans</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <a class="primary" href="#contact"><span data-copy>Discuss your project</span> <span aria-hidden="true">→</span></a>
+    </section>
